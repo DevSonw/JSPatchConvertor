@@ -63,7 +63,7 @@ JPClassContext.prototype.parse = function(){
 	}
 	script += this.ignore ? '' : '}';
 	if (this.classMethods.length) {
-		script += this.ignore ? '' : '{';
+		script += this.ignore ? '' : ',{';
 		for (var i = 0; i < this.classMethods.length; i ++) {
 			var separator = this.ignore && this.classMethods.length <= 1 ? '': ','
 			script += this.classMethods[i].parse() + separator;
@@ -207,16 +207,14 @@ JPDeclarationContext.prototype.parse = function(){
 
 /////////////////exports
 
-exports = {
-	JPCommonContext: JPCommonContext,
-	JPMsgContext: JPMsgContext,
-	JPParamContext: JPParamContext,
-	JPBlockContext: JPBlockContext,
-	JPBlockContentContext: JPBlockContentContext,
-	JPAssignContext: JPAssignContext,
-	JPAssignLeftContext: JPAssignLeftContext,
-	JPAssignRightContext: JPAssignRightContext,
-	JPDeclarationContext: JPDeclarationContext,
-	JPClassContext: JPClassContext,
-	JPMethodContext: JPMethodContext,
-};
+exports.JPCommonContext = JPCommonContext;
+exports.JPMsgContext = JPMsgContext;
+exports.JPParamContext = JPParamContext;
+exports.JPBlockContext = JPBlockContext;
+exports.JPBlockContentContext = JPBlockContentContext;
+exports.JPAssignContext = JPAssignContext;
+exports.JPAssignLeftContext = JPAssignLeftContext;
+exports.JPAssignRightContext = JPAssignRightContext;
+exports.JPDeclarationContext = JPDeclarationContext;
+exports.JPClassContext = JPClassContext;
+exports.JPMethodContext = JPMethodContext;
