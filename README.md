@@ -13,6 +13,8 @@ Please use Chrome or Safari.
 
 Click: https://github.com/DevSonw/JSPatchConvertor/blob/gh-pages/JSPatchConvertor.zip
 
+提醒：由于网速太慢，传文件时间太长，Mac版JSPatchConvertor在JSPatch交流群（QQ群：207283178）更新。
+
 ##Supported
 
 The Objective-C syntax below is supported to convert：
